@@ -6,4 +6,4 @@ const DocsPage = () => {
   );
 };
 
-export default DocsPage;
+export default DocsPage

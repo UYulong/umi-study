@@ -27,7 +27,12 @@ export default function Page() {
   return (
     <div>
       <h1 className={styles.title}>Page products</h1>
-      <ProductList products={productQuery.data.data} onDelete={(id) => productsDeleteMutation.mutate(id)} />
+      <ProductList
+        products={productQuery.data.data}
+        onDelete={(id) => {
+          productsDeleteMutation.mutate(id);
+        }}
+      />
     </div>
   );
 }
